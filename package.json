@@ -1,0 +1,73 @@
+{
+  "name": "gameh5-fire",
+  "version": "0.0.0",
+  "keywords": [
+    "vue3",
+    "vite2",
+    "template"
+  ],
+  "homepage": "https://github.com/galaxy-s10/vue3-webpack5-template.git",
+  "repository": "https://github.com/galaxy-s10/vue3-webpack5-template.git",
+  "license": "MIT",
+  "author": "shuisheng <2274751790@qq.com>",
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "build:test": "vue-tsc --noEmit && vite build",
+    "commit": "cz",
+    "start": "vite",
+    "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint:fix": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue --fix",
+    "prepare": "husky install",
+    "prettier": "prettier --write .",
+    "preview": "vite preview",
+    "push": "cz && standard-version",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "axios": "^0.27.2",
+    "core-js": "^3.17.2",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.3",
+    "js-md5": "^0.7.3",
+    "pinia": "^2.0.11",
+    "postcss-plugin-px2rem": "^0.8.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.13"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@typescript-eslint/parser": "^5.8.1",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/compiler-sfc": "^3.2.31",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "@vue/preload-webpack-plugin": "^2.0.0",
+    "chalk": "^4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.18.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-vue": "^8.5.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.7.1",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.4.0",
+    "standard-version": "^9.3.2",
+    "terser": "^5.7.0",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.12",
+    "vite-plugin-eslint": "^1.6.1",
+    "vue-tsc": "^0.38.2",
+    "webpack-obfuscator": "^3.5.1"
+  }
+}
